@@ -13,7 +13,7 @@
     <div id="app">
         <div class="add">
             <input type="text" v-model="input" />
-            <button>add</button>
+            <button v-on:click="addItem">add</button>
             <ul class="menu">
                 <li v-for="item in items">{{item}}</li>
 
@@ -21,6 +21,7 @@
             </ul>
         </div>
     </div>
+    <script src="app.js"></script>
 </body>
 
 </html>

@@ -8,4 +8,10 @@ new Vue({
             'camel',
         ],
     },
+    methods:{
+        addItem(){
+            this.items.push(this.input);
+            this.input = '';
+        },
+    },
 });
